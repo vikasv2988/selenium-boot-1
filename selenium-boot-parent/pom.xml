@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>net.daniv</groupId>
+        <artifactId>selenium-boot-dependencies</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../selenium-boot-dependencies</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>selenium-boot-parent</artifactId>
+    <packaging>pom</packaging>
+    <name>Selenium Boot Parent</name>
+    <description>Selenium Boot Parent Module</description>
+
+    <properties>
+        <main.basedir>${basedir}/..</main.basedir>
+        <disable.checks>true</disable.checks>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.version>3.1.1</maven.version>
+    </properties>
+
+    <!--<scm>-->
+        <!--<url>http://github.com/spring-projects/spring-boot</url>-->
+        <!--<connection>scm:git:git://github.com/spring-projects/spring-boot.git</connection>-->
+        <!--<developerConnection>scm:git:ssh://git@github.com/spring-projects/spring-boot.git</developerConnection>-->
+    <!--</scm>-->
+    <!--<issueManagement>-->
+        <!--<system>Github</system>-->
+        <!--<url>https://github.com/spring-projects/spring-boot/issues</url>-->
+    <!--</issueManagement>-->
+    <!--<ciManagement>-->
+        <!--<system>Bamboo</system>-->
+        <!--<url>https://build.spring.io/browse/BOOT-PUB</url>-->
+    <!--</ciManagement>-->
+
+    <dependencyManagement>
+        <dependencies>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+
+                <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven-compiler-plugin.version}</version>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                        <parameters>true</parameters>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

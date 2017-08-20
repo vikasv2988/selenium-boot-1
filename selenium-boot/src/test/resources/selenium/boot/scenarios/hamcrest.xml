@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="hamcrest-matchers" verbose="1" skipfailedinvocationcounts="false" preserve-order="true" configfailurepolicy="continue">
+    <test enabled="false" name="pattern-matchers" preserve-order="true"
+          parallel="classes" thread-count="3" skipfailedinvocationcounts="false"
+          verbose="1" group-by-instances="true">
+        <classes>
+            <class name="selenium.boot.hamcrest.text.StringMatcherTests"/>
+            <class name="selenium.boot.hamcrest.text.GroupNamespaceTests"/>
+            <class name="selenium.boot.hamcrest.text.PathTests"/>
+        </classes>
+    </test>
+    <test enabled="true" name="date-matchers" preserve-order="true"
+          parallel="false" thread-count="5" skipfailedinvocationcounts="false"
+          verbose="1" group-by-instances="true">
+        <classes>
+
+
+            <class name="selenium.boot.hamcrest.date.FormatterTests"/>
+            <class name="selenium.boot.hamcrest.date.IsAfterTests"/>
+            <class name="selenium.boot.hamcrest.date.IsDayOfMonthTest"/>
+            <class name="selenium.boot.hamcrest.date.IsDayOfWeekTest"/>
+            <class name="selenium.boot.hamcrest.date.IsDayTest"/>
+            <class name="selenium.boot.hamcrest.date.IsHourTest"/>
+            <class name="selenium.boot.hamcrest.date.IsMinuteTest"/>
+            <class name="selenium.boot.hamcrest.date.IsMonthTest"/>
+            <class name="selenium.boot.hamcrest.date.IsMillisecondTests"/>
+            <class name="selenium.boot.hamcrest.date.IsMinuteTest"/>
+
+
+
+            <class name="selenium.boot.hamcrest.date.IsSecondTest"/>
+            <class name="selenium.boot.hamcrest.date.IsYearTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>selenium-boot-build</artifactId>
+        <groupId>net.daniv</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>selenium-boot-dependencies</artifactId>
+    <packaging>pom</packaging>
+    <name>Selenium Boot Dependencies</name>
+    <description>Selenium Boot Dependencies</description>
+
+    <prerequisites>
+        <maven>3.3.9</maven>
+    </prerequisites>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>daniv</id>
+            <name>Dani Vainstein</name>
+            <email>solkmarkn@gmail.com</email>
+            <organization>freelancer</organization>
+            <roles>
+                <role>Sr. Java Automation Consultant</role>
+            </roles>
+            <timezone>(GMT-05:00) Bogota, Lima, Quito, Rio Branco</timezone>
+            <properties>
+                <linkedinId>https://www.linkedin.com/in/dani-vainstein</linkedinId>
+                <skypeId>dani.vainstein</skypeId>
+                <location>Medellin, Colombia</location>
+            </properties>
+        </developer>
+    </developers>
+
+    <properties>
+
+        <maven.version>3.1.1</maven.version>
+
+        <!-- Spring framework Dependency versions -->
+        <spring.boot.version>2.0.0.M3</spring.boot.version>
+        <spring.version>5.0.0.RC3</spring.version>
+        <spring-batch.version>4.0.0.M3</spring-batch.version>
+        <spring.integration.file.version>5.0.0.M6</spring.integration.file.version>
+        <spring.retry.version>1.2.1.RELEASE</spring.retry.version>
+        <spring.session.version>2.0.0.M3</spring.session.version>
+
+        <!-- annotation processing Dependency versions -->
+        <lombok.version>1.16.18</lombok.version>
+
+        <!-- logging Dependency versions -->
+        <logback.version>1.2.3</logback.version>
+        <slf4j.version>1.7.25</slf4j.version>
+
+        <!-- 3rd party Dependency versions -->
+        <commons.beanutils.version>1.9.3</commons.beanutils.version>
+        <commons.collections.version>3.2.2</commons.collections.version>
+        <commons.codec.version>1.10</commons.codec.version>
+        <commons.text.version>1.1</commons.text.version>
+
+        <hibernate.validator.version>5.4.1.Final</hibernate.validator.version>
+        <glassfish.el.version>3.0.1-b08</glassfish.el.version>
+
+        <google.guava.version>23.0</google.guava.version>
+        <google.diff.utils.version>1.3.0</google.diff.utils.version>
+        <com.google.appengine.version>1.9.54</com.google.appengine.version>
+        <simple.json.version>1.1.1</simple.json.version>
+        <gson.version>2.8.1</gson.version>
+
+        <asciitable.j7.version>1.0.1</asciitable.j7.version>
+        <joda.time.version>2.9.9</joda.time.version>
+        <dk.brics.automaton.version>1.11.2</dk.brics.automaton.version>
+        <args4j.version>2.33</args4j.version>
+        <apache.poi.version>3.16</apache.poi.version>
+        <snakeyaml.version>1.18</snakeyaml.version>
+
+        <dropwizard-metrics.version>3.1.4</dropwizard-metrics.version>
+
+        <!-- Testing Dependency versions -->
+        <testng.version>6.11</testng.version>
+        <hamcrest.version>1.4-atlassian-1</hamcrest.version>
+        <hamcrest.date.version>2.0.4</hamcrest.date.version>
+        <mockito.version>2.8.47</mockito.version>
+        <freemaker.version>2.3.26-incubating</freemaker.version>
+        <spring.integration.file.version>5.0.0.M6</spring.integration.file.version>
+        <!-- Plugin versions -->
+        <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
+        <exec-maven-plugin.version>1.5.0</exec-maven-plugin.version>
+        <git-commit-id-plugin.version>2.2.2</git-commit-id-plugin.version>
+        <maven-assembly-plugin.version>2.6</maven-assembly-plugin.version>
+        <maven-clean-plugin.version>3.0.0</maven-clean-plugin.version>
+        <maven-compiler-plugin.version>3.6.2</maven-compiler-plugin.version>
+        <maven-dependency-plugin.version>2.10</maven-dependency-plugin.version>
+        <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
+        <maven-eclipse-plugin.version>2.10</maven-eclipse-plugin.version>
+        <maven-enforcer-plugin.version>1.4</maven-enforcer-plugin.version>
+        <maven-failsafe-plugin.version>2.18.1</maven-failsafe-plugin.version>
+        <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
+        <maven-invoker-plugin.version>3.0.0</maven-invoker-plugin.version>
+        <maven-help-plugin.version>2.2</maven-help-plugin.version>
+        <maven-jar-plugin.version>3.0.2</maven-jar-plugin.version>
+        <maven-javadoc-plugin.version>2.10.4</maven-javadoc-plugin.version>
+        <maven-resources-plugin.version>3.0.1</maven-resources-plugin.version>
+        <maven-shade-plugin.version>2.4.3</maven-shade-plugin.version>
+        <maven-site-plugin.version>3.5.1</maven-site-plugin.version>
+        <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
+        <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
+        <versions-maven-plugin.version>2.3</versions-maven-plugin.version>
+        <maven-changes-plugin.version>2.9</maven-changes-plugin.version>
+        <maven-surefire-report-plugin.version>2.16</maven-surefire-report-plugin.version>
+        <maven-javadoc-plugin.version>2.9.1</maven-javadoc-plugin.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            
+            <!-- SPRING BOOT -->
+
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-autoconfigure</artifactId>-->
+                <!--<version>${spring.boot.version}</version>-->
+            <!--</dependency>-->
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-test-autoconfigure -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-test-autoconfigure</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+
+
+            <!-- description: Spring Boot Core
+                 github     : https://github.com/spring-projects/spring-boot/tree/master/spring-boot
+                 date       : Jul 29, 2017
+                 home       : http://projects.spring.io/spring-boot/
+                 maven      : https://mvnrepository.com/artifact/org.springframework.boot/spring-boot  -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-configuration-processor -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-configuration-processor</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-test -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-test</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-loader-tools -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-loader-tools</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+
+            <!-- SPRINGFRAMEWORK -->
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.integration/spring-integration-file -->
+            <dependency>
+                <groupId>org.springframework.integration</groupId>
+                <artifactId>spring-integration-file</artifactId>
+                <version>${spring.integration.file.version}</version>
+            </dependency>
+
+            <!-- description: The Spring Framework provides a comprehensive programming and configuration model for modern Java-based enterprise applications
+                 on any kind of deployment platform.
+                 A key element of Spring is infrastructural support at the application level:
+                 Spring focuses on the "plumbing" of enterprise applications so that teams can focus on application-level business logic,
+                 without unnecessary ties to specific deployment environments.
+                 github     : https://github.com/spring-projects/spring-framework
+                 category   : Core Utilities
+                 date       : Jul 29, 2017
+                 home       : https://github.com/spring-projects/spring-framework
+                 maven      : https://mvnrepository.com/artifact/org.springframework/spring-core -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <!-- description: The Spring Framework provides a comprehensive programming and configuration model for modern Java-based enterprise applications
+                              on any kind of deployment platform.
+                              A key element of Spring is infrastructural support at the application level:
+                              Spring focuses on the "plumbing" of enterprise applications so that teams can focus on application-level business logic,
+                              without unnecessary ties to specific deployment environments.
+                 github     : https://github.com/spring-projects/spring-framework
+                 category   : Core Utilities
+                 date       : Jul 29, 2017
+                 home       : https://github.com/spring-projects/spring-framework
+                 maven      : https://mvnrepository.com/artifact/org.springframework/spring-context  -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+
+            <!-- SELENIUM FRAMEWORK -->
+
+            <dependency>
+                <groupId>net.daniv</groupId>
+                <artifactId>selenium-boot</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- SELENIUM FRAMEWORK STARTERS -->
+
+            <dependency>
+                <groupId>net.daniv</groupId>
+                <artifactId>selenium-boot-starter-parent</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.daniv</groupId>
+                <artifactId>selenium-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.daniv</groupId>
+                <artifactId>selenium-boot-starter-logging</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.daniv</groupId>
+                <artifactId>selenium-boot-starter-test</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.daniv</groupId>
+                <artifactId>selenium-boot-test-support</artifactId>
+                <version>${project.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+
+            <!-- 3RD PARTY DEPENDENCIES -->
+
+            <!-- description: Project Lombok makes java a spicier language by adding 'handlers'
+                              that know how to build and compile simple, boilerplate-free, not-quite-java code.
+                 category   : Annotation Processor
+                 github     : https://github.com/rzwitserloot/lombok
+                 home       : https://projectlombok.org/
+                 maven      : https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!-- description: args4j is a small Java class library that makes it easy to parse command line
+                              options/arguments in your CUI application.
+                 categoty   : Command Line Parsers
+                 github     : https://github.com/kohsuke/args4j
+                 home       : http://args4j.kohsuke.org/
+                 maven      : https://mvnrepository.com/artifact/args4j/args4j -->
+            <dependency>
+                <groupId>args4j</groupId>
+                <artifactId>args4j</artifactId>
+                <version>${args4j.version}</version>
+            </dependency>
+            
+            <!-- description: Guava is a set of core libraries that includes new collection types (such as multimap and multiset),
+                              immutable collections, a graph library, functional types, an in-memory cache,
+                              and APIs/utilities for concurrency, I/O, hashing, primitives, reflection, string processing, and much more!
+                 category   : core utilities
+                 github     : https://github.com/google/guava
+                 wiki       : https://github.com/google/guava/wiki
+                 maven      : https://mvnrepository.com/artifact/com.google.guava/guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${google.guava.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.google.errorprone</groupId>
+                        <artifactId>error_prone_annotations</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.google.j2objc</groupId>
+                        <artifactId>j2objc-annotations</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>animal-sniffer-annotations</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <!-- description: Apache Commons Text is a library focused on algorithms working on strings.
+                 github     : https://github.com/apache/commons-text
+                 home       : http://commons.apache.org/proper/commons-text/
+                 java docs  : http://commons.apache.org/proper/commons-text/javadocs/api-release/index.html
+                 maven      : https://mvnrepository.com/artifact/org.apache.commons/commons-text -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-text</artifactId>
+                <version>${commons.text.version}</version>
+            </dependency>
+
+            <!-- description: Hamcrest is a library of matchers, which can be combined in to create flexible
+                              expressions of intent in tests. They've also been used for other purposes.
+                 category   : Testing Frameworks
+                 github     : https://github.com/hamcrest/JavaHamcrest
+                 home       : http://hamcrest.org/JavaHamcrest/
+                 maven     : https://mvnrepository.com/artifact/org.hamcrest/hamcrest-library  -->
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-library</artifactId>
+                <version>${hamcrest.version}</version>
+            </dependency>
+
+            <!-- description: A Java library for reading and writing Microsoft Office binary and OOXML file formats.
+                 category   : Excel Libraries
+                 date       : Apr 11, 2017
+                 github     : https://github.com/apache/poi
+                 home       : http://poi.apache.org/
+                 java docs  : http://poi.apache.org/apidocs/index.html
+                 maven      : https://mvnrepository.com/artifact/org.apache.poi/poi  -->
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${apache.poi.version}</version>
+            </dependency>
+
+            <!-- description: Mockito is a mocking framework that tastes really good.
+                              It lets you write beautiful tests with a clean & simple API.
+                              Mockito doesn’t give you hangover because the tests are very readable and they produce clean verification errors.
+                 category   : Mocking
+                 date       : Jun 15, 2017
+                 github     : https://github.com/mockito/mockito
+                 home       : http://site.mockito.org/
+                 maven      : https://mvnrepository.com/artifact/org.mockito/mockito-core   -->
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${mockito.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+
+            <!-- description: ASCII table - A simple tool to format tables with various row/column options for indentation,
+                              indentation character, alignment, padding (left, right, both),
+                              padding characters (left, right, both), and in-line whitespace characters.
+                              ASCII list -  Many different lists (itemize/unordered, enumerate/ordered, checklist, description)
+                              with support for nested lists, using ASCII and UTF characters for labels, for Java 7.
+                 date       : Apr 04, 2017
+                 github     : https://github.com/vdmeer/asciitable
+                 maven      : https://mvnrepository.com/artifact/de.vandermeer/asciitable-j7   -->
+            <dependency>
+                <groupId>de.vandermeer</groupId>
+                <artifactId>asciitable-j7</artifactId>
+                <version>${asciitable.j7.version}</version>
+            </dependency>
+
+            <!-- description: Expression Language 3.0 API
+                 category   : Expression Languages, Java Specifications
+                 date       : Jun 06, 2014
+                 github     : https://github.com/javaee/uel-ri
+                 home       : http://uel.java.net
+                 maven      : https://mvnrepository.com/artifact/javax.el/javax.el-api  -->
+            <dependency>
+                <groupId>javax.el</groupId>
+                <artifactId>javax.el-api</artifactId>
+                <version>${glassfish.el.version}</version>
+            </dependency>
+
+            <!-- description: Joda-Time provides a quality replacement for the Java date and time classes.
+                              The design allows for multiple calendar systems, while still providing a simple API.
+                              The 'default' calendar is the ISO8601 standard which is used by XML.
+                              The Gregorian, Julian, Buddhist, Coptic, Ethiopic and Islamic systems are also included, and we welcome further
+                              additions. Supporting classes include time zone, duration, format and parsing.
+                              Joda-Time is the de facto standard date and time library for Java prior to Java SE 8.
+                              Users are now asked to migrate to java.time (JSR-310).
+                 category   : Date and Time Utilities
+                 date       : Mar 23, 2017
+                 github     : https://github.com/JodaOrg/joda-time
+                 home       : http://www.joda.org/joda-time/
+                 java docs  : http://www.joda.org/joda-time/apidocs/index.html
+                 maven      : https://mvnrepository.com/artifact/joda-time/joda-time -->
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${joda.time.version}</version>
+            </dependency>
+
+   
+
+
+
+
+
+            <!-- description: Logback is intended as a successor to the popular log4j project, picking up where log4j leaves off.
+                              Logback's architecture is sufficiently generic so as to apply under different circumstances.
+                              At present time, logback is divided into three modules, logback-core, logback-classic and logback-access.
+                              The logback-core module lays the groundwork for the other two modules.
+                              The logback-classic module can be assimilated to a significantly improved version of log4j.
+                              Moreover, logback-classic natively implements the SLF4J API so that you can readily switch back and forth
+                              between logback and other logging frameworks such as log4j or java.util.logging (JUL).
+                 category   : Logging Frameworks
+                 github     : https://github.com/qos-ch/logback
+                 date       : Mar 31, 2017
+                 home       : https://logback.qos.ch/
+                 java docs  :
+                 maven      : https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback.version}</version>
+            </dependency>
+
+
+            <!-- description: The Simple Logging Facade for Java (SLF4J) serves as a simple facade or abstraction for various logging frameworks
+                             (e.g. java.util.logging, logback, log4j) allowing the end user to plug in the desired logging framework at deployment time.
+                 category   : Logging Bridges
+                 github     : 
+                 date       : Mar 16, 2017
+                 home       : http://www.slf4j.org
+                 java docs  :
+                 maven      : https://mvnrepository.com/artifact/org.slf4j/jul-to-slf4j -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jul-to-slf4j</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+
+            <!-- description: The Simple Logging Facade for Java (SLF4J) serves as a simple facade or abstraction for various logging frameworks
+                             (e.g. java.util.logging, logback, log4j) allowing the end user to plug in the desired logging framework at deployment time.
+                 category   : Logging Bridges
+                 github     :
+                 date       : Mar 16, 2017
+                 home       : http://www.slf4j.org
+                 java docs  :
+                 maven      : https://mvnrepository.com/artifact/org.slf4j/log4j-over-slf4j-->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>log4j-over-slf4j</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+
+
+
+            <!-- description: TestNG is a testing framework inspired from JUnit and NUnit but introducing some new
+                              functionalities that make it more powerful and easier to use, such as:
+                              1. Annotations.
+                              2. Run your tests in arbitrarily big thread pools with various policies available
+                                 ( all methods in their own thread, one thread per test class, etc...).
+                              3. Test that your code is multithread safe.
+                              4. Flexible test configuration.
+                              5. Support for data-driven testing (with @DataProvider).
+                              6. Support for parameters.
+                              7. Powerful execution model (no more TestSuite).
+                              8. Supported by a variety of tools and plug-ins (Eclipse, IDEA, Maven, etc...).
+                              9. Embeds BeanShell for further flexibility.
+                              10. Default JDK functions for runtime and logging (no dependencies).
+                              11. Dependent methods for application server testing.
+                 category   : Testing Frameworks
+                 github     : https://github.com/cbeust/testng
+                 date       : Mar 03, 2017
+                 home       : http://testng.org
+                 java docs  :
+                 maven      : https://mvnrepository.com/artifact/org.testng/testng -->
+            <dependency>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>${testng.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.beust</groupId>
+                        <artifactId>jcommander</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            
+
+
+            
+
+            <!-- description: Apache FreeMarker is a template engine: a Java library to generate text output
+                              (HTML web pages, e-mails, configuration files, source code, etc.) based on templates and changing data.
+                              Templates are written in the FreeMarker Template Language (FTL), which is a simple, specialized language
+                              (not a full-blown programming language like PHP).
+                              You meant to prepare the data to display in a real programming language,
+                              like issue database queries and do business calculations, and then the template displays that already prepared data.
+                              In the template you are focusing on how to present the data, and outside the template you are focusing on what data to present.
+                 category   : Template Engines
+                 github     : https://github.com/freemarker/
+                 date       : Jun 08, 2016
+                 home       : 	http://freemarker.org/
+                 java docs  :
+                 maven      : https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+            <dependency>
+                <groupId>org.freemarker</groupId>
+                <artifactId>freemarker</artifactId>
+                <version>${freemaker.version}</version>
+            </dependency>
+
+
+
+        </dependencies>
+    </dependencyManagement>
+
+    <repositories>
+        
+        <repository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
+        <repository>
+            <id>atlassian-public</id>
+            <url>https://maven.atlassian.com/3rdparty/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+                <checksumPolicy>warn</checksumPolicy>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+                <checksumPolicy>warn</checksumPolicy>
+            </releases>
+        </repository>
+        
+    </repositories>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <!-- https://github.com/JodaOrg/joda-time-i18n/blob/master/pom.xml -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-project-info-reports-plugin</artifactId>
+                    <version>${maven-project-info-plugin.version}</version>
+                    <!--<reportSets>-->
+                        <!--<reportSet>-->
+                            <!--<reports>-->
+                                <!--<report>dependencies</report>-->
+                                <!--<report>dependency-info</report>-->
+                                <!--<report>issue-tracking</report>-->
+                                <!--<report>license</report>-->
+                                <!--<report>project-team</report>-->
+                                <!--<report>scm</report>-->
+                                <!--<report>summary</report>-->
+                            <!--</reports>-->
+                        <!--</reportSet>-->
+                    <!--</reportSets>-->
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${maven-javadoc-plugin.version}</version>
+                    <!--<reportSets>-->
+                        <!--<reportSet>-->
+                            <!--<reports>-->
+                                <!--<report>javadoc</report>-->
+                            <!--</reports>-->
+                        <!--</reportSet>-->
+                    <!--</reportSets>-->
+                    <configuration>
+                        <links>
+                            <link>http://www.joda.org/joda-time/apidocs/</link>
+                        </links>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-report-plugin</artifactId>
+                    <version>${maven-surefire-report-plugin.version}</version>
+                    <configuration>
+                        <showSuccess>true</showSuccess>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-changes-plugin</artifactId>
+                    <version>${maven-changes-plugin.version}</version>
+                    <!--<reportSets>-->
+                        <!--<reportSet>-->
+                            <!--<reports>-->
+                                <!--<report>changes-report</report>-->
+                            <!--</reports>-->
+                        <!--</reportSet>-->
+                    <!--</reportSets>-->
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+
+</project>
