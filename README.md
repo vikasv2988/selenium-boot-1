@@ -1,5 +1,7 @@
 ## Welcome to GitHub Pages
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/31a7e1a0b94f4c789ce08b37c76ca223)](https://www.codacy.com/app/solmarkn/selenium-boot?utm_source=github.com&utm_medium=referral&utm_content=daniv/selenium-boot&utm_campaign=badger)
+
 You can use the [editor on GitHub](https://github.com/daniv/selenium-boot/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
